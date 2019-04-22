@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2013春夏中国国际时装周-网易时尚现场报道</title>
+<base target="_blank" />
+<!--#include virtual="/special/f2e/lady_cn_fashion_week_top.html"-->
+</head>
+<body>
+<div class="ntes_cnav_lady_wrap" id="ntes_cnav_lady_wrap">
+<div class="common_wrap">
+<!--#include virtual="/special/sp/ntes_cnav.html"-->
+<!--project begin-->
+<div class="cnfw_wrap">
+	<div class="cnfw_head">
+		<h1>2013春夏中国国际时装周-网易时尚现场报道</h1>
+		<img src="http://img1.cache.netease.com/lady/yang/mote6.png" class="cnfw_wrap_model" alt="中国国际时装周_模特" /><img src="http://img1.cache.netease.com/f2e/lady/cn_fashion_week/images/t_topic.png" class="cnfw_head_topic" alt="中国国际时装周_文字" />	</div>
+	<div class="cnfw_top">
+		<div class="cnfw_tumb_wrap" id="tumb_scroll">
+			<div class="cnfw_tumb_body" id="tumb_scroll_body">
+				<ul class="cnfw_tumb">
+					#set($listnum1 = 4)
+					#set ($list=$tag.getList("topicid=00264MML;listnum=$listnum1;titlelength=30;digestlength=30;pointstart=70;pointend=90;")) 
+					#if ($list)#foreach ($one in $list)	
+					#set($til=${tools.replaceAll($tools.stripTags([标题]),"\"","&quot;")})				
+					<li #if($velocityCount == 1)class="current"#end>
+						<a href="[链接]" title="$til"><img src="[图片链接]" width="300" height="480" alt="$til" /></a>
+						<span class="cnfw_vote_mask"></span>
+						<div class="cnfw_tumb_mask">
+							<a href="[链接]">$tools.cutHtmlString([标题],16)</a>
+							<p>[摘要]</p>
+						</div>
+					</li>
+					#end#end
+				</ul>
+			</div>
+			<div class="cnfw_tumb_ctrl">
+				<ul>
+					#set ($list=$tag.getList("topicid=00264MML;listnum=$listnum1;titlelength=20;digestlength=20;pointstart=70;pointend=90;")) 
+					#if ($list)#foreach ($one in $list)	
+					#set($til=${tools.replaceAll($tools.stripTags([标题]),"\"","&quot;")})				
+					<li #if($velocityCount == 1)class="current"#end></li>
+					#end#end
+				</ul>
+			</div>
+		</div>
+		<div class="cnfw_leatest">
+			<h2>最新看点</h2>
+			<div class="cnfw_leatest_item">
+				<a href="http://fashion.163.com/12/1026/04/8END6DDH00264MMM.html"><img src="http://img4.cache.netease.com/lady/2012/10/26/20121026051611f368e.jpg" alt="" /></a>
+				<a class="cnfw_leatest_title" href="http://fashion.163.com/12/1026/04/8END6DDH00264MMM.html">李艾自嘲是"超老模" </a>
+				<p>许久不登台的李艾为王培沂压轴出场，直言穿婚纱走秀让她想嫁人，也笑称自己是"超老模"。</p>
+		  </div>
+			<div class="cnfw_leatest_item">
+				<a href="http://fashion.163.com/12/1025/21/8EMN8PL900264MMM.html"><img src="http://img1.cache.netease.com/lady/2012/10/26/2012102605012418af7.jpg" alt="" /></a>
+				<a class="cnfw_leatest_title" href="http://fashion.163.com/12/1025/21/8EMN8PL900264MMM.html">大牌设计师集体缺席 </a>
+				<p>网易时尚独家评论：在国际时装周上大放光彩的中国设计师，为何缺席我们自己时尚盛事？</p>
+		  </div>
+		</div>
+		<div class="cnfw_vote">
+			<h2>热门投票</h2>
+			<div class="cnfw_vote_img">
+				<img src="http://img1.cache.netease.com/lady/2012/10/26/201210260714578337e.gif" alt="" />
+				<span class="cnfw_vote_mask"></span>
+				<a href="http://fashion.163.com/special/2013zhongguoshizhuangzhou/">中国时尚已从制造步入创造阶段了吗？</a>
+			</div>
+			<div class="cnfw_vote_data">
+				<span class="cnfw_vote_up"><span class="cnfw_vote_upbtn" id="nvt-dig-button90793"></span><span class="cnfw_vote_upnum nvt-dig-count nvt-dig-count90793" id="nvt-dig-count90793">0</span></span>
+				<span class="cnfw_vote_down"><span class="cnfw_vote_downbtn" id="nvt-dig-button90794"></span><span class="cnfw_vote_downnum nvt-dig-count nvt-dig-count90794" id="nvt-dig-count90794">0</span></span>
+			</div>
+			<script type="text/javascript" src="http://img1.cache.netease.com/cnews/img/nvt10/nvt_widgets_2.0.js" charset="gb2312"></script>
+			<script type="text/javascript">
+			(function(){
+				NTES.ready(function(a){new nvt.Dig("18800",{success:function(b){a
+			
+				(this.options.buttonSelector+b.oid).addCss("disabled")},countSelector:".nvt-dig-count"})});
+			})();
+			</script>
+		</div>
+		<div class="cnfw_schedule">
+			<h2>秀场日程</h2>
+			<div class="cnfw_sch_bd" id="schedule_tabcge">
+				<div class="cnfw_sch_tabs">
+					<a href="#" class="current">10/25</a>
+					<a href="#">10/26</a>
+					<a href="#">10/27</a>
+					<a href="#">10/28</a>
+					<a href="#">10/29</a>
+					<a href="#">10/30</a>
+					<a href="#">10/31</a>
+				</div>
+				<div class="cnfw_sch_panel current">
+					<span>唐韵"金顶奖"艺术展</span>
+					<span>NE·TIGER</span> 
+					<span>Cabbeen·卡宾</span>
+					<span>WANG PEIYI·王培沂</span> 
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>楚和听香·楚艳</span> 
+					<span>左岸·洪金山</span>
+					<span>Simon Gao·高杨</span> 
+					<span>SEC·祁刚</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>LXF·刘小飞</span> 
+					<span>GIOIA PAN·潘怡良</span>
+					<span>维斯凯·袁冰</span> 
+					<span>J.Lindeberg</span>
+					<span>五色风马·魏来</span> 
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>金苑·洪美璇</span> 
+					<span>TOM DONG·董怀光</span>
+					<span>名瑞·婚纱</span> 
+					<span>TANYA Couture·王燕喃</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>蕾沃尔·庄淦然</span> 
+					<span>WOLFZONE·刘奕群</span>
+					<span>珂莱蒂尔·房莹</span> 
+					<span>旭化成·何国钲</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>郝佳</span> 
+					<span>VITAWEI·魏华</span>
+					<span>Zhang jingjing·张京京</span> 
+					<span>Guli时装发布会</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>She guang Hu·胡社光</span> 
+					<span>东丽·刘薇</span>
+					<span>金绎·赵亚坤</span> 
+					<span>圣达威·陈闻</span> 
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="cnfw_broad">
+		<h2 class="cnfw_grid_h2">现场播报</h2>
+		<div class="cnfw_broad_title">
+			<h3>前方记者</h3>
+			<p>2013春夏中国国际时装周10月24日正式开幕，"首发阵容"有主打中国风的礼服品牌NE-TIGER及著名设计师alexwang王培沂，来跟随网易时尚一起享用这场中国味十足的饕餮盛宴吧。</p>
+		</div>
+		<div class="cnfw_broad_1">
+		  <a href="http://lady.163.com/photoview/54E50026/32305.html"><img src="http://img5.cache.netease.com/lady/2012/10/26/2012102607460777276.jpg" alt="" /></a>
+			<p><em></em>25日晚的卡宾男装秀后台，卡宾正与知名秀导张舰交谈，掌握正常秀的情况。中国时尚人认真敬业的工作态度，是15年中国时尚事业蓬勃发展的基石。</p>
+		</div>
+		<div class="cnfw_broad_2">
+		  <img src="http://img5.cache.netease.com/lady/2012/10/26/201210260527266783c.jpg" alt="" />
+			<p><em></em>秀邀请函时间到！今年的邀请函都非常有设计感，从左到右分别是：唯美的祈刚"战心"邀请函，设计感十足手绘邀请函，以及厚度堪比板砖的王培沂邀请函。。</p>
+		</div>
+		<div class="cnfw_broad_3">
+			<a href="http://fashion.163.com/photoview/54E50026/32304.html"><img src="http://img6.cache.netease.com/lady/2012/10/26/201210260003474a69f.jpg" alt="" /></a>
+			<p><em></em>名模赵晨池后台换装完毕后拿起小易拍照。本次NE-TIGER卷起宋朝风，飘逸轻灵的设计，淡雅高贵的色彩，缂丝、织锦、印金、刺绣等绝艺让每款华服都令人目眩神迷。</p>
+		</div>
+		<div class="cnfw_broad_4">
+			<a href="http://fashion.163.com/photoview/54E50026/32306.html#p=8ENJPU7154E50026"><img src="http://img2.cache.netease.com/lady/2012/10/26/201210260622113ef3b.jpg" alt="" /></a>
+			<p><em></em>中国国际时装周刚刚拉开帷幕就迎来了众多支持中国创造的明星嘉宾，就连科技界大佬李开复都出现在了秀场前排。一身黑色西装造型的开复老师，有没有很洋气？</p>
+		</div>
+	</div>
+	<div class="cnfw_exc">
+		<h2 class="cnfw_grid_h2">独家策划</h2>
+		<div class="cnfw_exc_wrap">
+			#set($setid = 32305)
+			#set($channelid = '0026')
+			#set($gallerySkin = 'white')
+			#parse('/0080/n/0080nph_2.vm')		</div>
+	</div>
+	
+	<div class="cnfw_atlas">
+		<div class="cnfw_atlas_lstimgtt">
+			<ul>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110"  alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="cnfw_xy">
+		<h2 class="cnfw_grid_h2">小易带你看时尚</h2>
+		<div class="cnfw_xy_list">
+			<div class="cnfw_xy_item">
+				<a href="http://fashion.163.com/12/1025/20/8EMJ6HV200264MMM.html"><img src="http://img3.cache.netease.com/lady/2012/10/25/20121025230854a8021.jpg" alt="" /></a>
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="http://fashion.163.com/12/1025/20/8EMJ6HV200264MMM.html">龚蓓苾：穿中国风的礼服征战国外电影节</a>
+					<p>NE-TIGER华服发布的宋代氛围营造的非常好，琴声悠扬，意蕴清雅，如果是去国外的电影节，我一定选择这样充满着中国气息的时装。</p>
+			  </div>
+		  </div>
+			<div class="cnfw_xy_item">
+				<a href="http://fashion.163.com/12/1026/04/8END6DDH00264MMM.html"><img src="http://img6.cache.netease.com/lady/2012/10/26/201210260720035551c.jpg" alt="" /></a>
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="http://fashion.163.com/12/1026/04/8END6DDH00264MMM.html">李艾：穿婚纱走秀想嫁人 自嘲"超老模"</a>
+					<p>李艾为王培沂的大秀压轴出场秀唯美婚纱，直言穿婚纱让她想嫁人，而与新生代的超模相比，她也笑称自己是"超老模"。</p>
+				</div>
+		  </div>
+			<div class="cnfw_xy_item">
+			    <a href="http://fashion.163.com/12/1025/20/8EMJ2CA600264MMM.html"><img src="http://img1.cache.netease.com/lady/2012/10/26/20121026072428c0126.jpg" alt="" /></a>
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="http://fashion.163.com/12/1025/20/8EMJ2CA600264MMM.html">张志峰：不需要和国外大牌竞争</a>
+					<p>今天为了带大家重回宋代，邀请了妙音天女敬善媛带来天籁之音，另外就是中国最有名的古琴大师李祥霆。</p>
+				</div>
+		  </div>
+		  <div class="clear"></div>
+            <div class="cnfw_xy_item">
+				<a href="http://fashion.163.com/12/1026/04/8END30TK00264MMM.html"><img src="http://img5.cache.netease.com/lady/2012/10/26/20121026073114d8039.jpg" alt="" /></a>
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+				  <a href="http://fashion.163.com/12/1026/04/8END30TK00264MMM.html">陈碧舸：中国设计师是用生命在设计</a>
+					<p>虽然国外相对专业且商业化，但我觉得中国设计师的热情非常高，非常热爱这个行业。而且很多都很谦逊有礼。</p>
+			  </div>
+		  </div>
+          <div class="cnfw_xy_item">
+				<a href="http://fashion.163.com/12/1026/04/8ENCUUTK00264MMM.html"><img src="http://img5.cache.netease.com/lady/2012/10/26/2012102607352736939.jpg" alt="" /></a>
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="http://fashion.163.com/12/1026/04/8ENCUUTK00264MMM.html">王培沂：奢侈品行业如今都在看中国</a>
+					<p>普通大众对于时尚领域的关注，促进了整个行业的发展。虽然我们现在较国外还有很多差距，但无可否认的是，世界都开始逐渐关注中国。</p>
+			  </div>
+		  </div>
+          <div class="cnfw_xy_item">
+				<a href="http://fashion.163.com/12/1025/23/8EMTH44H00264MMM.html"><img src="http://img1.cache.netease.com/lady/2012/10/26/2012102607421830df6.jpg" alt="" /></a>
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="http://fashion.163.com/12/1025/20/8EMJ6HV200264MMM.html">赵晨池：中国正在引领潮流</a>
+					<p>现在的试装以及彩排都很国际化的，就很明显的感觉到我们的时尚在进步，差距在缩小，甚至时尚潮流也在跟着我们走了。</p>
+			  </div>
+		  </div>
+		</div>
+	</div>
+	<div class="cnfw_trend">
+		<h2 class="cnfw_grid_h2">秀场趋势</h2>
+		<h3 class="cnfw_trend_time">TIME 10/<span>25</span> </h3>
+		<div class="cnfw_trend_1">
+		  <a href="http://fashion.163.com/photoview/54E50026/32304.html"><img src="http://img2.cache.netease.com/lady/2012/10/26/201210260601071fe8e.jpg" alt="" /></a>		</div>
+		<div class="cnfw_trend_2">
+			<div class="cnfw_trend_desc">
+				<a href="http://fashion.163.com/photoview/54E50026/32304.html" class="cnfw_trend_title">首秀日：中国元素抢占眼球</a>
+				<p>2012年10月25日，连续十二年担纲中国国际时装周开幕首秀的华服品牌NE·TIGER，再度为这一时尚盛会拉开了序幕。</p>
+				<p>本次NE-TIGER卷起宋朝风，飘逸轻灵的设计，淡雅高贵的色彩，缂丝、织锦、印金、刺绣等绝艺让每款华服都令人目眩神迷。</p>
+				<p>著名设计师王培沂的大秀也在同日上演，早已经成功从模特转行主持的李艾竟作为压轴模特，身着白色婚纱亮相，着实让现场的观众大饱眼福。</p>
+			  <a href="http://fashion.163.com/photoview/54E50026/32304.html#p=8EN8DPKO54E50026" class="cnfw_trend_more">详细>></a>
+			</div>
+		<img src="http://img2.cache.netease.com/lady/2012/10/26/201210260605250242a.jpg" alt="" />		</div>
+		<div class="cnfw_trend_3">
+			<img src="http://img3.cache.netease.com/lady/2012/10/26/2012102606071916f71.jpg" alt="" />
+			<a href="http://fashion.163.com/photoview/54E50026/32301.html#p=8EN4JIUK54E50026"><img src="http://img5.cache.netease.com/lady/2012/10/26/20121026061124633a5.jpg" alt="" /></a> </div>
+		<div class="cnfw_trend_4">
+			<a href="http://fashion.163.com/photoview/54E50026/32303.html#p=8EN8GKFG54E50026"><img src="http://img1.cache.netease.com/lady/2012/10/26/20121026064034f8fda.jpg" alt="" /></a>
+			<a href="http://lady.163.com/photoview/54E50026/32302.html#p=8EN71MSK54E50026"><img src="http://img5.cache.netease.com/lady/2012/10/26/201210260636379d294.jpg" alt="" /></a> </div>
+		<div class="clear"></div>
+	</div>
+	<div class="cnfw_vedio">
+		<h2 class="cnfw_grid_h2">秀场视频</h2>
+		<a href="http://fashion.163.com/special/2013zhongguoshizhuangzhoushipin/" class="cnfw_vedio_more">MORE+</a>
+		<div class="cnfw_vedio_list">
+			<div class="cnfw_vedio_item">
+				<div class="cnfw_vedio_wrap">
+<OBJECT id="CoreVPlayer" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" height="250" width="280" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+      <PARAM NAME="Movie" VALUE="http://img1.cache.netease.com/flvplayer081128/~false~0026_V8DOLB172~vimg2.ws.126.net/image/snapshot/2012/10/7/3/V8DOLB173~.swf">
+      <PARAM NAME="Align" VALUE="middle">
+      <PARAM NAME="Quality" VALUE="High">
+      <PARAM NAME="AllowScriptAccess" VALUE="always">
+      <PARAM NAME="Scale" VALUE="ShowAll">
+      <PARAM NAME="BGColor" VALUE="#ffffff">
+      <PARAM NAME="AllowFullScreen" VALUE="true">
+      <embed src="http://img1.cache.netease.com/flvplayer081128/~false~0026_V8DOLB172~vimg2.ws.126.net/image/snapshot/2012/10/7/3/V8DOLB173~.swf" align="middle" quality="high" bgcolor="#ffffff" allowScriptAccess="always" allowFullScreen="true" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="280" height="250"></embed>
+      </OBJECT>
+      </div>>
+				<a href="http://fashion.163.com/special/2013zhongguoshizhuangzhoushipin/">NE-TIGER高级华服发布会</a>
+			</div>
+			<div class="cnfw_vedio_item">
+<div class="cnfw_vedio_wrap">
+<OBJECT id="CoreVPlayer" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" height="250" width="280" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+      <PARAM NAME="Movie" VALUE="http://img1.cache.netease.com/flvplayer081128/~false~0026_V8DP6I87Q~vimg2.ws.126.net/image/snapshot/2012/10/7/R/V8DP6I87R~.swf">
+      <PARAM NAME="Align" VALUE="middle">
+      <PARAM NAME="Quality" VALUE="High">
+      <PARAM NAME="AllowScriptAccess" VALUE="always">
+      <PARAM NAME="Scale" VALUE="ShowAll">
+      <PARAM NAME="BGColor" VALUE="#ffffff">
+      <PARAM NAME="AllowFullScreen" VALUE="true">
+      <embed src="http://img1.cache.netease.com/flvplayer081128/~false~0026_V8DP6I87Q~vimg2.ws.126.net/image/snapshot/2012/10/7/R/V8DP6I87R~.swf" align="middle" quality="high" bgcolor="#ffffff" allowScriptAccess="always" allowFullScreen="true" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="280" height="250"></embed>
+      </OBJECT>
+      </div>
+				<a href="http://fashion.163.com/special/2013zhongguoshizhuangzhoushipin/"> WANG PEIYI ·王培沂时装发布会 </a>
+			</div>
+			<div class="cnfw_vedio_item">
+<div class="cnfw_vedio_wrap">
+<OBJECT id="CoreVPlayer" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" height="250" width="280" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+      <PARAM NAME="Movie" VALUE="http://img1.cache.netease.com/flvplayer081128/~false~0026_V8DP6DCB6~vimg2.ws.126.net/image/snapshot/2012/10/B/7/V8DP6DCB7~.swf">
+      <PARAM NAME="Align" VALUE="middle">
+      <PARAM NAME="Quality" VALUE="High">
+      <PARAM NAME="AllowScriptAccess" VALUE="always">
+      <PARAM NAME="Scale" VALUE="ShowAll">
+      <PARAM NAME="BGColor" VALUE="#ffffff">
+      <PARAM NAME="AllowFullScreen" VALUE="true">
+      <embed src="http://img1.cache.netease.com/flvplayer081128/~false~0026_V8DP6DCB6~vimg2.ws.126.net/image/snapshot/2012/10/B/7/V8DP6DCB7~.swf" align="middle" quality="high" bgcolor="#ffffff" allowScriptAccess="always" allowFullScreen="true" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="280" height="250"></embed>
+      </OBJECT>
+      </div>
+				<a href="http://fashion.163.com/special/2013zhongguoshizhuangzhoushipin/">2113春夏卡宾男装秀场</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="cnfw_play">
+		<h2 class="cnfw_grid_h2">秀场回放</h2>
+		<div class="cnfw_play_list">
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32288.html#p=8EMKSRUB54E50026"><img src="http://img1.cache.netease.com/lady/yang/dongbeihu6.jpg" alt="" /></a>
+				<span>2013春夏NE-TIGER高级华服</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32288.html#p=8EMKSRUB54E50026"><img src="http://img1.cache.netease.com/lady/yang/dongbeihu7.jpg" alt="" /></a>
+				<span>2013春夏NE-TIGER高级华服</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32288.html#p=8EMKSRUB54E50026"><img src="http://img1.cache.netease.com/lady/yang/dongbeihu8.jpg" alt="" /></a>
+				<span>2013春夏NE-TIGER高级华服</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32288.html#p=8EMKSRUB54E50026"><img src="http://img1.cache.netease.com/lady/yang/dongbeihu10.jpg" alt="" /></a>
+				<span>2013春夏NE-TIGER高级华服</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32288.html#p=8EMKSRUB54E50026"><img src="http://img1.cache.netease.com/lady/yang/dongbeihu9.jpg" alt="" /></a>
+				<span>2013春夏NE-TIGER高级华服</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32303.html#p=8EN8GKFG54E50026"><img src="http://img6.cache.netease.com/lady/2012/10/26/201210260537045176c.jpg" alt="" /></a>
+				<span>WANG PEIYI ·王培沂时装秀 </span>			</div>
+			<div class="cnfw_play_item">
+			    <a href="http://fashion.163.com/photoview/54E50026/32303.html#p=8EN8GKFG54E50026"><img src="http://img6.cache.netease.com/lady/2012/10/26/20121026054026ff701.jpg" alt="" /></a>
+				<span>WANG PEIYI ·王培沂时装秀</span>			</div>
+			<div class="cnfw_play_item">
+			    <a href="http://fashion.163.com/photoview/54E50026/32303.html#p=8EN8GKFG54E50026"><img src="http://img1.cache.netease.com/lady/2012/10/26/201210260541533e67a.jpg" alt="" /></a>
+				<span>WANG PEIYI ·王培沂时装秀</span>			</div>
+			<div class="cnfw_play_item">
+			    <a href="http://fashion.163.com/photoview/54E50026/32303.html#p=8EN8GKFG54E50026"><img src="http://img1.cache.netease.com/lady/2012/10/26/20121026054303a6a0e.jpg" alt="" /></a>
+				<span>WANG PEIYI ·王培沂时装秀</span>			</div>
+			<div class="cnfw_play_item">
+			    <a href="http://fashion.163.com/photoview/54E50026/32303.html#p=8EN8GKFG54E50026"><img src="http://img5.cache.netease.com/lady/2012/10/26/201210260544097730c.jpg" alt="" /></a>
+				<span>WANG PEIYI ·王培沂时装秀</span>			</div>
+                <div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32301.html#p=8EN4JIUK54E50026"><img src="http://img2.cache.netease.com/lady/2012/10/26/20121026054948a455a.jpg" alt="" /></a>
+				<span>2012中国内衣设计大赛作品</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32301.html#p=8EN4JIUK54E50026"><img src="http://img3.cache.netease.com/lady/2012/10/26/20121026055240711fa.jpg" alt="" /></a>
+				<span>2012中国内衣设计大赛作品</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32301.html#p=8EN4JIUK54E50026"><img src="http://img4.cache.netease.com/lady/2012/10/26/2012102605534847d6f.jpg" alt="" /></a>
+				<span>2012中国内衣设计大赛作品</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32301.html#p=8EN4JIUK54E50026"><img src="http://img3.cache.netease.com/lady/2012/10/26/2012102605544274984.jpg" alt="" /></a>
+				<span>2012中国内衣设计大赛作品</span>			</div>
+			<div class="cnfw_play_item">
+				<a href="http://fashion.163.com/photoview/54E50026/32301.html#p=8EN4JIUK54E50026"><img src="http://img1.cache.netease.com/lady/2012/10/26/2012102605553508356.jpg" alt="" /></a>
+				<span>2012中国内衣设计大赛作品</span>			</div>
+                
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="cnfw_comments">
+		<h2 class="cnfw_grid_h2">中国国际时装周网友评论</h2>
+		<div class="cnfw_comments_list">
+			<iframe src="http://t.163.com/zt/lady/0026/2013zhongguoshizhuangzhou" width="960" height="785" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+		</div>
+	</div>
+	
+	<div class="cnfw_news">
+		<h2 class="cnfw_news_h2"><img src="http://img1.cache.netease.com/lady/yang/shizhuangzhou2.jpg" width="600" height="74" alt="相关新闻"></h2>
+		<div class="cnfw_news_lst">
+			<ul>
+				#set ($list=$tag.getList("topicid=00264MMM;titlelength=26;digestlength=100;pointstart=60;pointend=70;listnum=200;"))
+				#if ($list)#foreach ($one in $list)
+				#set ($alt =${tools.replaceAll(${tools.replaceAll([标题],"\"","'")},"</?em[^>]*>","")})
+				#set ($dateStr = ${tools.cutString($one.get("ptime"), 10)})
+				<li><span>($dateStr)</span><a href="[链接]" title="$alt">[标题]</a></li>
+				#end#end
+			</ul>
+		</div>
+	</div>
+	<div class="cnfw_special">
+		<h2 class="cnfw_special_h2"><img src="http://img1.cache.netease.com/lady/yang/shizhuang1.jpg" width="600" height="74" alt="2013春夏中国国际时装周相关专题" /></h2>
+		<div class="cnfw_special_lstimgtt">
+			<ul>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013纽约春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssmilanfashionweek/"><img src="http://img6.cache.netease.com/lady/2012/9/20/20120920143653f0a34.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssmilanfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssparisfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/20120920144109adc84.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssparisfashionweek/">2013巴黎春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/zhongguoshili/"><img src="http://img1.cache.netease.com/lady/2012/9/20/20120920143648e9a2e.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/zhongguoshili/">现场见证：中国势力在伦敦</a></h3>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--project end-->
+<!--#include virtual="/special/f2e/lady_cn_fashion_week_foot.html"-->
+<!--#include virtual="/special/sp/ntes_foot.html"-->
+<!--#include virtual="/special/0026jt/nielsen.html"-->
+</div>
+</div>
+</body>
+</html>

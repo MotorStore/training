@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>css 进阶</title>
+</head>
+<body>
+
+<style>
+*{
+	font-family: arial;
+	line-height:1.8;
+}	
+a+a {
+	margin-left:1em;
+}
+li {
+	margin-bottom:2em;
+}
+pre {
+	border:1px solid #ccc;
+	background:#f5f5f5;
+	padding:10px;
+	width:500px;
+}
+pre em{
+	color:#cd0000;
+}
+</style>
+
+<h1>css 进阶</h1>
+
+<!-- https://shuise.github.io/basic/share/index.html -->
+
+<ol>
+	<li>css 媒介查询 <a href="media.html"> @media</a></li>
+	<li>css 动画 
+		<a href="transform.html">transform</a>
+		<a href="animation.html">animation</a>
+		<a href="path.html">仿 path 菜单 demo</a>
+	</li>
+	<li><a href="shapes.html">不规则图形</a></li>
+	<li>
+		<a href="reset.css">css reset</a>
+		<a href="https://shuise.github.io/basic/share/example/iecss.html">IE css default</a>
+	</li>
+	<li>
+		css 作用域 （两种方式的对比）
+		<pre><em>.a .b</em> { command : value;}
+<em>.a-b</em> { command : value;}</pre>
+	</li>
+	<li><a href="https://shuise.github.io/basic/DIY/index.html">页面开发 常规思路</a></li>
+	<li>布局（inline/inline-block、
+		<a href="module/00_grid_all.html">float</a>、
+		position、
+		<a href="flex.html">flex</a>等）</li>
+	<li>模块（菜单、表单、表格、图表等） <a href="module/index.html">示例</a></li>
+	<li>再谈 css 命名（UI、业务 的复用）
+		<p>类继承</p>
+		<pre>.class {
+	<em>@import class1, class2, class3;</em>
+	command : value;
+	………………
+	………………
+	………………
+	command : value;
+}</pre>
+		<pre>&lt;tag class= <em>"class1 class2 class3 class"</em>></tag></pre>
+	</li>
+	<li>
+		<a href="http://sass-lang.com/">saas</a>、
+		<a href="http://lesscss.org/">less</a>、
+		stylas等
+	</li>
+</ol>	
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>apply</title>
+</head>
+<body>
+<style>
+#show{
+	font-size:16px;
+	line-height:2;
+}
+.emoji-1f600{
+	background:url(1f600.svg);
+	background-size:100% 100%;
+	display:inline-block;
+	width:24px;
+	height:24px;
+	font-size:0;
+}	
+</style>
+
+<h1>emoji在融云消息里的使用</h1>
+
+<div id="show"></div>
+
+<script src="4-sdk.js"></script>	
+	
+<script>
+var dom = document.getElementById("show");
+
+var s = [];
+	s.push("1. 消息体里为 unicode = “u1F600”");
+
+	s.push("2. 如果不支持原生emoji渲染，使用show.image，所有浏览器显示一致");
+	s.push(emoji.show("u1F600","image"));
+
+	s.push("3. 也可以选择自动切换，会出现多个浏览器显示效果不同");
+	s.push(emoji.show("u1F600","auto"));
+
+	s.push("4. 在无法显示emoji或者图片的地方用文字替代，目前支持中英文");
+	s.push(emoji.getName("u1F600").en);
+	s.push(emoji.getName("u1F600").cn);
+
+dom.innerHTML = s.join("<br>");
+</script>	
+</body>
+</html>

@@ -1,0 +1,41 @@
+function txSwitch(){
+	if(!NTES('#schedule_tabcge')) return;
+	var o = NTES('#schedule_tabcge')
+	new NTES.ui.Slide(NTES('.cnfw_sch_tabs a',o), NTES('.cnfw_sch_panel',o),'current', 'mouseover',0,50);
+}
+
+function picScroll(){
+	if(!NTES('#tumb_scroll')) return;
+	var o = NTES('#tumb_scroll');
+	var scroll_inc = 310,
+		scrollbody = document.getElementById("tumb_scroll_body"),
+		s_timmer =null;	
+	
+	function Sine(t,b,c,d){ return -c * Math.cos(t/d * (Math.PI/2)) + c + b; }
+	
+	function scrollmove(index,scroll,delay){
+		if(s_timmer!=null){
+			clearInterval(s_timmer);
+			s_timmer=null;
+		}	 	
+		var t = 0,s1=index*scroll_inc,s0=scroll.scrollLeft,s=0;
+		s_timmer = setInterval(function(){
+			s = Sine(t,s0,s1-s0,delay);
+			if(t>delay){
+				scroll.scrollLeft = s1;
+				clearInterval(s_timmer);
+				s_timmer = null;
+				return;
+			}				
+			scroll.scrollLeft = s;
+			t+=13;
+		},13);
+	}	
+	
+	var tabFunv = new NTES.ui.Slide(NTES('.cnfw_tumb_ctrl li',o), NTES('.cnfw_tumb_body li',o),'current', 'mouseover',3000,50);
+
+	tabFunv.onShow = function(index, ctrl, content){
+		scrollmove(index,scrollbody,400);
+	};
+
+}

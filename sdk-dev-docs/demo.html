@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+</head>
+<body>
+<style>
+#show{
+	font-size:16px;
+	line-height:2;
+}
+.emoji-1f600{
+	background:url(1f600.svg);
+	background-size:100% 100%;
+	display:inline-block;
+	width:24px;
+	height:24px;
+	font-size:0;
+}	
+</style>
+
+<h1>emoji demo</h1> 
+
+<a href="http://www.rongcloud.cn/docs/api/js/index.html">API 文档</a>
+
+<hr>
+
+<div id="show"></div>
+
+<script src="4-sdk.js"></script>	
+	
+<script>
+var dom = document.getElementById("show");
+
+dom.innerHTML += emoji.show("u1F600","image") + "<br>";
+dom.innerHTML += emoji.show("u1F600","auto") + "<br>";
+dom.innerHTML += emoji.show("u1F600") + "<br>";
+dom.innerHTML += emoji.getName("u1F600").en + "<br>";
+dom.innerHTML += emoji.getName("u1F600").cn + "<br>";
+
+emoji.show("u1F600","image1")
+</script>	
+</body>
+</html>

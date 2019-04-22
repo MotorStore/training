@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国国际时装周</title>
+<!--#include file="inc/top.html"-->
+</head>
+<body>
+<div class="ntes_cnav_lady_wrap" id="ntes_cnav_lady_wrap">
+<div class="common_wrap">
+<!--#include virtual="/include/ntes_cnav_lady.html"-->
+
+
+<!--project begin-->
+<div class="cnfw_wrap">
+	<div class="cnfw_head">
+		<h1>中国国际时装周</h1>
+		<img src="images/model.png" class="cnfw_wrap_model" alt="中国国际时装周" />
+		<img src="images/t_topic.png" class="cnfw_head_topic" alt="中国国际时装周" />
+	</div>
+
+	<div class="cnfw_top">
+		<div class="cnfw_tumb_wrap" id="tumb_scroll">
+			<div class="cnfw_tumb_body" id="tumb_scroll_body">
+				<ul class="cnfw_tumb">
+					<li class="current">
+						<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" width="300" height="480" />
+						<span class="cnfw_vote_mask"></span>
+						<div class="cnfw_tumb_mask">
+							<a href="#">你喜欢纽约时</a>
+							<p>你喜欢纽约时装周的试穿和商业化么？</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://img5.cache.netease.com/lady/2012/10/24/20121024101110b0724.jpg" alt="" width="300" height="480" />
+						<span class="cnfw_vote_mask"></span>
+						<div class="cnfw_tumb_mask">
+							<a href="#">你喜欢纽约时</a>
+							<p>你喜欢纽约时装周的试穿和商业化么？</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" width="300" height="480" />
+						<span class="cnfw_vote_mask"></span>
+						<div class="cnfw_tumb_mask">
+							<a href="#">你喜欢纽约时</a>
+							<p>你喜欢纽约时装周的试穿和商业化么？</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="cnfw_tumb_ctrl">
+				<ul>
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cnfw_leatest">
+			<h2>最新看点</h2>
+			<div class="cnfw_leatest_item">
+				<a href="#"><img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" /></a>
+				<a class="cnfw_leatest_title" href="http://lady.163.com/12/1023/15/8EGSRLEP00264IJ2.html">龟梨和也鼻梁大崩塌 </a>
+				<p>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+			</div>
+			<div class="cnfw_leatest_item">
+				<a href="#"><img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" /></a>
+				<a class="cnfw_leatest_title" href="http://lady.163.com/12/1023/15/8EGSRLEP00264IJ2.html">龟梨和也鼻梁大崩塌 </a>
+				<p>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+			</div>
+		</div>
+
+		<div class="cnfw_vote">
+			<h2>热门投票</h2>
+			<div class="cnfw_vote_img">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span class="cnfw_vote_mask"></span>
+				<a href="#">你喜欢纽约时装周的试穿和商业化么？</a>
+			</div>
+			<div class="cnfw_vote_data">
+				<span class="cnfw_vote_up"><span class="cnfw_vote_upbtn" id="nvt-dig-button12096"></span><span class="cnfw_vote_upnum" id="nvt-dig-count12096">108</span></span>
+				<span class="cnfw_vote_down"><span class="cnfw_vote_downbtn" id="nvt-dig-button12097"></span><span class="cnfw_vote_downnum" id="nvt-dig-count12097">21</span></span>
+			</div>
+		</div>
+
+		<div class="cnfw_schedule">
+			<h2>秀场日程</h2>
+			<div class="cnfw_sch_bd" id="schedule_tabcge">
+				<div class="cnfw_sch_tabs">
+					<a href="#" class="current">10/25</a>
+					<a href="#">10/26</a>
+					<a href="#">10/27</a>
+					<a href="#">10/28</a>
+					<a href="#">10/29</a>
+					<a href="#">10/30</a>
+					<a href="#">10/31</a>
+				</div>
+				<div class="cnfw_sch_panel current">
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+				</div>
+				<div class="cnfw_sch_panel">
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+					<span>CHRISPHER</span> 
+					<span>CHANEL</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div class="cnfw_broad">
+		<h2 class="cnfw_grid_h2">现场播报</h2>
+		<div class="cnfw_broad_title">
+			<h3>前方记者</h3>
+			<p>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。然。</p>
+		</div>
+		<div class="cnfw_broad_1">
+			<img src="images/b1.png" alt="" />
+			<p><em>1</em>网络上流传了一张龟梨和也的侧脸照，网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+		</div>
+		<div class="cnfw_broad_2">
+			<img src="images/b2.png" alt="" />
+			<p><em>2</em>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+		</div>
+		<div class="cnfw_broad_3">
+			<img src="images/b3.png" alt="" />
+			<p><em>3</em>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+		</div>
+		<div class="cnfw_broad_4">
+			<img src="images/b4.png" alt="" />
+			<p><em>4</em>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+		</div>
+	</div>
+
+	<div class="cnfw_exc">
+		<h2 class="cnfw_grid_h2">独家策划</h2>
+		<div class="cnfw_exc_wrap">
+			<p style="height:500px;font-size:50px;background:#000;line-height:500px;text-align:center;">图集</p>
+		</div>
+	</div>
+	
+	<div class="cnfw_atlas">
+		<div class="cnfw_atlas_lstimgtt">
+			<ul>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110"  alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110"  alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="160" height="110" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="cnfw_xy">
+		<h2 class="cnfw_grid_h2">小易带你看时尚</h2>
+		<div class="cnfw_xy_list">
+			<div class="cnfw_xy_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="#">你喜欢纽约时装周的试穿和商业化么？</a>
+					<p>你喜欢纽约时装周的试穿和商业化么？你喜欢纽约时装周的试穿和商业化么？</p>
+				</div>
+			</div>
+			<div class="cnfw_xy_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="#">你喜欢纽约时装周的试穿和商业化么？</a>
+					<p>你喜欢纽约时装周的试穿和商业化么？你喜欢纽约时装周的试穿和商业化么？</p>
+				</div>
+			</div>
+			<div class="cnfw_xy_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span class="cnfw_vote_mask"></span>
+				<div class="cnfw_xy_desc">
+					<a href="#">你喜欢纽约时装周的试穿和商业化么？</a>
+					<p>你喜欢纽约时装周的试穿和商业化么？你喜欢纽约时装周的试穿和商业化么？</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="cnfw_trend">
+		<h2 class="cnfw_grid_h2">秀场趋势</h2>
+		<h3 class="cnfw_trend_time">TIME 10/<span>25</span> </h3>
+		<div class="cnfw_trend_1">
+			<img src="images/t1.png" alt="" />
+		</div>
+		<div class="cnfw_trend_2">
+			<div class="cnfw_trend_desc">
+				<a href="#" class="cnfw_trend_title">这是一个标题</a>
+				<p>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+				<p>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+				<p>网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，网络上流传了一张龟梨和也的侧脸照，鼻子线条变成鹰勾状，鼻梁明显变低，极不自然。</p>
+				<a href="#" class="cnfw_trend_more">详细>></a>
+			</div>
+			<img src="images/t2.png" alt="" />
+		</div>
+		<div class="cnfw_trend_3">
+			<img src="images/t3.png" alt="" />
+			<img src="images/t4.png" alt="" />
+		</div>
+		<div class="cnfw_trend_4">
+			<img src="images/t5.png" alt="" />
+			<img src="images/t6.png" alt="" />
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="cnfw_vedio">
+		<h2 class="cnfw_grid_h2">秀场视频</h2>
+		<a href="#" class="cnfw_vedio_more">MORE+</a>
+		<div class="cnfw_vedio_list">
+			<div class="cnfw_vedio_item">
+				<div class="cnfw_vedio_wrap"></div>
+				<a href="#">这是视频的标题</a>
+			</div>
+			<div class="cnfw_vedio_item">
+				<div class="cnfw_vedio_wrap"></div>
+				<a href="#">这是视频的标题</a>
+			</div>
+			<div class="cnfw_vedio_item">
+				<div class="cnfw_vedio_wrap"></div>
+				<a href="#">这是视频的标题</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="cnfw_play">
+		<h2 class="cnfw_grid_h2">秀场回放</h2>
+		<div class="cnfw_play_list">
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="cnfw_play_item">
+				<img src="http://img2.cache.netease.com/lady/2012/10/23/2012102322160741f2a.jpg" alt="" />
+				<span>LOUIS VUITTON OCT 3.2012</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="cnfw_comments">
+		<h2 class="cnfw_grid_h2">网友评论</h2>
+		<div class="cnfw_comments_list">
+			<p style="height:400px;line-height:400px;background:#000;font-size:100px;text-align:center;">微博模块</p>
+		</div>
+	</div>
+	
+	<div class="cnfw_news">
+		<h2 class="cnfw_news_h2"><img src="http://img2.cache.netease.com//lady/2011/4/ae7.jpg" width="960" height="36" alt="相关新闻"></h2>
+		<div class="cnfw_news_lst">
+			<ul>
+				<li><span>(2012-10-07)</span><a href="http://fashion.163.com/12/1007/14/8D7ISCPC00264MHK.html" title="黑马频出！中国军团占领时装周">黑马频出！中国军团占领时装周</a></li>
+				<li><span>(2012-10-07)</span><a href="http://fashion.163.com/12/1007/14/8D7ISCPC00264MHK.html" title="黑马频出！中国军团占领时装周">黑马频出！中国军团占领时装周</a></li>
+				<li><span>(2012-10-07)</span><a href="http://fashion.163.com/12/1007/14/8D7ISCPC00264MHK.html" title="黑马频出！中国军团占领时装周">黑马频出！中国军团占领时装周</a></li>
+				<li><span>(2012-10-07)</span><a href="http://fashion.163.com/12/1007/14/8D7ISCPC00264MHK.html" title="黑马频出！中国军团占领时装周">黑马频出！中国军团占领时装周</a></li>
+				<li><span>(2012-10-07)</span><a href="http://fashion.163.com/12/1007/14/8D7ISCPC00264MHK.html" title="黑马频出！中国军团占领时装周">黑马频出！中国军团占领时装周</a></li>
+				<li><span>(2012-10-07)</span><a href="http://fashion.163.com/12/1007/14/8D7ISCPC00264MHK.html" title="黑马频出！中国军团占领时装周">黑马频出！中国军团占领时装周</a></li>
+				<li><span>(2012-10-07)</span><a href="http://fashion.163.com/12/1007/14/8D7ISCPC00264MHK.html" title="黑马频出！中国军团占领时装周">黑马频出！中国军团占领时装周</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="cnfw_special">
+		<h2 class="cnfw_special_h2"><img src="http://img2.cache.netease.com//lady/2011/4/ae8.jpg" width="960" height="36" alt="相关专题" /></h2>
+		<div class="cnfw_special_lstimgtt">
+			<ul>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+				<li>
+					<a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/"><img src="http://img3.cache.netease.com/lady/2012/9/20/201209201436508545e.jpg" width="200" height="150" class="imgBg01" alt=""/></a>
+					<h3><a href="http://fashion.163.com/special/2013ssnewyorkfashionweek/">2013米兰春夏时装周</a></h3>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--project end-->
+
+
+<!--#include file="inc/foot.html"-->
+<!--#include virtual="/include/ntes_foot.html"-->
+</div>
+</div>
+</body>
+</html>

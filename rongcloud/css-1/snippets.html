@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>html 片段</title>
+</head>
+<body>
+
+
+
+<style>
+*{
+	font-family:arial;
+	line-height:2;
+}
+h2{
+	border-top:1px dotted #ccc;
+	padding-top:0.5em;
+}	
+textarea {
+	border:1px solid #ccc;
+	background-color:#f5f5f5;
+	padding:15px;
+	width:700px;
+	overflow:hidden;
+	line-height:1.6;
+}
+</style>
+
+<h1>几个容易混淆的 html 片段</h1>
+
+<h2>logo</h2>
+<p>推荐做法：文字 + 背景</p>
+<textarea>
+<div class="logo">
+	公司名称
+</div>
+
+<div class="company-name">
+	公司名称
+</div>
+</textarea>
+
+
+
+<h2>图片按钮</h2>
+<p>推荐做法：button + 背景</p>
+<textarea>
+<button class="btn-name">按钮文字</button>
+</textarea>
+
+
+	
+<h2>字符按钮</h2>
+<p>推荐做法：button + 本义字符 + 背景；或 <a href="http://www.w3school.com.cn/cssref/pr_gen_content.asp">content</a></p>
+<textarea>
+<button class="prev">上翻</button>
+<button class="next">下翻</button>
+</textarea>
+
+
+
+
+<h2>装饰性字符</h2>
+<p>推荐做法：<a href="http://www.w3school.com.cn/cssref/pr_gen_content.asp">content</a></p>
+<textarea>
+<style>
+.require::before{
+	content: "*";
+}
+.require::after{
+	content: ":";
+}
+</style>
+<li>
+	<label for="name" class="require">输入项</label>
+	<input type="text" id="name">
+</li>	
+</textarea>
+
+
+
+
+	
+<h2>序号</h2>
+<p>推荐做法：<a href="http://www.w3school.com.cn/cssref/pr_gen_counter-increment.asp">counter-increment</a></p>
+<textarea>
+<div class="list">
+	<div class="item">content</div>
+	<div class="item">content</div>
+	<div class="item">content</div>
+	<div class="item">content</div>
+</div>
+</textarea>
+
+
+
+<script src="jquery-1.9.0.js"></script>
+<script>
+(function(){
+	$("textarea").each(function(index, node){
+		var h = node.scrollHeight - 40;
+		$(node).css("height", h + "px");
+	});
+})();	
+</script>
+
+
+<div class="css-menu">
+	<h1>css 基础</h1>
+	<ol>
+		<li><a href="http://www.w3school.com.cn/cssref/index.asp">css command</a></li>
+		<li><a href="http://www.w3school.com.cn/cssref/css_selectors.asp">css 选择器</a></li>
+		<li>
+			基础渲染逻辑：<br>
+			3.1 同一个页面的所有css规则生成 style rules <br>
+			3.2 所有文档解析生成 dom tree <br>
+			3.3 二者生成 render tree 并继而渲染生成 html 页面
+			<p>推荐阅读<a href="https://kb.cnblogs.com/page/129756/">浏览器渲染原理</a> <a href="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">英文原文</a></p>
+		</li>
+		<li>
+			<a href="https://www.w3.org/TR/selectors-3/#specificity">css 优先级规则</a> （越具体细致的规则越优先）
+			<p>简单总结：id 优先 class，同级就近优先，不同级深度优先</p>
+		</li>
+		<li>
+			display讲解 <a href="http://www.w3school.com.cn/cssref/pr_class_display.asp">(block/inline/none ……)</a>
+			<p><a href="display.html">display demo</a></p>
+		</li>
+	</ol>
+</div>
+
+<div style="height:300px;"></div>	
+</body>
+</html>

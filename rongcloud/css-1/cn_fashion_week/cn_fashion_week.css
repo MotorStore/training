@@ -1,0 +1,154 @@
+@import url(common.css);
+body {
+  color: #333333;
+}
+img {
+  vertical-align: top;
+}
+.hidden {
+  display: none;
+}
+a,
+a:visited,
+a:hover {
+  color: #333333;
+}
+.cnfw_grid {
+  margin-bottom: 50px;
+  font-size: 12px;
+}
+.cnfw_grid_h2 {
+  margin-bottom: 24px;
+  height: 38px;
+  overflow: hidden;
+  line-height: 200px;
+}
+
+.cnfw_broad {
+  margin-bottom: 50px;
+  font-size: 12px;
+  position: relative;
+  height: 490px;
+  width:960px;
+  margin:50px;
+  border:10px solid #ccc;
+}
+.cnfw_broad .cnfw_grid_h2 {
+  background: url(images/broad.png) no-repeat 0 0;
+}
+.cnfw_broad em {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 180px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background: url(images/arr.png);
+}
+.cnfw_broad_title {
+  width: 560px;
+  float: left;
+}
+.cnfw_broad_title h3 {
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 28px;
+  font-weight: 400;
+}
+.cnfw_broad_title p {
+  padding: 8px 0 30px 20px;
+  margin-left: 110px;
+}
+.cnfw_broad_1 {
+  width: 565px;
+  position: relative;
+  float: left;
+}
+.cnfw_broad_1 p {
+  position: absolute;
+  left: auto;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+  padding-left: 40px;
+}
+.cnfw_broad_1 p em {
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.cnfw_broad_2 {
+  float: left;
+  width: 320px;
+  margin-left: -320px;
+  position: relative;
+  z-index: 10px;
+}
+.cnfw_broad_2 p {
+  position: relative;
+  margin-top: 15px;
+  padding-left: 40px;
+  *zoom: 1;
+}
+.cnfw_broad_3 {
+  float: right;
+  width: 380px;
+  margin-top: -63px;
+}
+.cnfw_broad_3 img {
+  float: left;
+  width: 130px;
+  height: 230px;
+}
+.cnfw_broad_3 p {
+  position: relative;
+  padding-left: 40px;
+  float: right;
+  width: 195px;
+  margin-top: -3px;
+}
+.cnfw_broad_3 p em {
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.cnfw_broad_4 {
+  float: right;
+  width: 380px;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 183px;
+}
+.cnfw_broad_4 img {
+  width: 380px;
+  height: 170px;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+}
+.cnfw_broad_4 p {
+  padding-left: 40px;
+  width: 195px;
+  float: right;
+  *zoom: 1;
+}
+.cnfw_broad_4 p em {
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  position: static;
+  float: left;
+  margin: 3px 0 0 -40px;
+  _display: inline;
+}
