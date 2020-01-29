@@ -37,12 +37,17 @@ p span{
     height:20px;
     padding:5px 15px;
     border-radius:3px;
-    background:#ccc;
+    background:#369;
+    color:#fff;
     cursor: pointer;
 }
 .header{
     background: #f5f5f5;
     padding:10px;
+}
+h1 {
+    font-size: 24px;
+    padding-bottom: 1em;
 }
 em {
     display: none;
@@ -50,10 +55,14 @@ em {
 .ok em{
     display: inline;
 }
+.over-bar {
+    padding:15px 0;width:100%;text-align:center;position:fixed;left:0;bottom:0;
+    background: #f5f5f5;
+}
 </style>
 <div id="list" :class="{ok: isOver}">
     <div class="header">
-        <h1>自动出题器</h1>
+        <h1>动动你的小头脑</h1>
         题目数量<input type="number" v-model="len" max=100>
         <span @click="gene" class="btn">生成</span>
     </div>
@@ -61,7 +70,8 @@ em {
         <span>{{ item.a }} {{ item.b }} {{ item.c }}</span> = <input type="number" v-model="item.d" @keydown="modify">
         <em>{{ judge(item) }}</em>
     </p>
-    <div style="padding:15px;" v-if="open"><span @click="over" class="btn">交卷</span></div>
+    <div style="height:50px;"></div>
+    <div class="over-bar" v-if="open"><span @click="over" class="btn">交卷</span></div>
 </div>
 
 <script src="https://frontend.mofangchuxing.com/vue-2.6.10.js"></script>
@@ -82,9 +92,9 @@ var el = new Vue({
         judge: function(item){
             console.log(item);
             console.log(item.a +  item.b + item.c);
-            item.b = item.b == 'x' ? '*' : item.b;
+            var b = item.b == 'x' ? '*' : item.b;
             console.log(item.d);
-            var result = eval(item.a +  item.b + item.c) == item.d;
+            var result = eval(item.a +  b + item.c) == item.d;
             if(item.d == undefined){
                 return '';
             }
@@ -99,6 +109,8 @@ var el = new Vue({
             var _this = this;
             var len = _this.len;
             len = Math.min(100, len);
+            len = Math.max(10, len);
+            _this.len = len;
             var data = [];
             for(var i=0;i<len;i++){
                 var b = symbols[_this.getRandom(3)];
