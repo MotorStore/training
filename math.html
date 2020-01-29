@@ -8,6 +8,10 @@
 </head>
 <body>
 <style>
+*{
+    margin:0;
+    padding:0;
+}
 body{
     font-size:20px;
 }
@@ -22,6 +26,9 @@ input{
     font-size:20px;
     outline:none;
 }
+#list p {
+    padding:10px;
+}
 p span{
     display:inline-block;
     width:100px;
@@ -33,15 +40,28 @@ p span{
     background:#ccc;
     cursor: pointer;
 }
+.header{
+    background: #f5f5f5;
+    padding:10px;
+}
+em {
+    display: none;
+}
+.ok em{
+    display: inline;
+}
 </style>
-<div id="list">
-    <h1>自动出题器</h1>
-    题目数量<input type="number" v-model="len" max=100>
-    <span @click="gene" class="btn">生成</span>
+<div id="list" :class="{ok: isOver}">
+    <div class="header">
+        <h1>自动出题器</h1>
+        题目数量<input type="number" v-model="len" max=100>
+        <span @click="gene" class="btn">生成</span>
+    </div>
     <p v-for="item in list">
-        <span>{{ item.a }} {{ item.b }} {{ item.c }}</span> = <input type="text" v-model="item.d">
+        <span>{{ item.a }} {{ item.b }} {{ item.c }}</span> = <input type="number" v-model="item.d" @keydown="modify">
         <em>{{ judge(item) }}</em>
     </p>
+    <div style="padding:15px;" v-if="open"><span @click="over" class="btn">交卷</span></div>
 </div>
 
 <script src="https://frontend.mofangchuxing.com/vue-2.6.10.js"></script>
@@ -49,6 +69,8 @@ p span{
 var el = new Vue({
     el: '#list',
     data: {
+        isOver: false,
+        open: false,
         len: 10,
         list: []
     },
@@ -95,7 +117,14 @@ var el = new Vue({
             return data;
         },
         gene: function(){
+            this.open = true;
             this.list = this.getList();
+        },
+        over: function(){
+            this.isOver = true;
+        },
+        modify: function(){
+            this.isOver = false;
         }
     }
 });
