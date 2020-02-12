@@ -68,7 +68,7 @@ var app = new Vue({
 		speaking: function(formName){
 			var _this = this;
 
-			var tpl = '{{ this._target }}相关负责人表示，当前距离{{this.event}}还有{{this._diff}}时间，我们将密切关注疫情的发展变化情况，会同相关部门和各地及时评估疫情对于{{this._event}}可能产生的的影响，审慎研究制订今年{{this._event}}的具体实施方案。'
+			var tpl = '{{ this._target }}相关负责人表示，当前距离{{this._event}}还有{{this._diff}}时间，我们将密切关注疫情的发展变化情况，会同相关部门和各地及时评估疫情对于{{this._event}}可能产生的的影响，审慎研究制订今年{{this._event}}的具体实施方案。'
 
 			_this.$refs[formName].validate((valid) => {
 				if (!valid) {
