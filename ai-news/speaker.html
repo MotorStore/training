@@ -5,62 +5,94 @@
 <title>AI智能发言官</title>
 </head>
 <body>
-
+<script src="./vue-2.6.10.js"></script>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="./element-ui/index.css">
+<!-- 引入组件库 -->
+<script src="./element-ui/index.js"></script>
 
 <script src="render.js"></script>
 
-<script>
-function speaking(){
-	var tpl = '{{ this.target }}相关负责人表示，当前距离{{this.event}}还有{{this.time}}时间，我们将密切关注疫情的发展变化情况，会同相关部门和各地及时评估疫情对于{{this.event}}可能产生的的影响，审慎研究制订今年{{this.event}}的具体实施方案。'
-
-	var time = document.getElementById('time').value;
-	var target = document.getElementById('target').value;
-	var _event = document.getElementById('event').value;
-
-	var diff = new Date(time).getTime() - new Date().getTime();
-		diff = diff/(1000*60*60*24*30);
-		diff = Math.floor(diff);
-	var words = "一,两,三,四,五,六,七,八,九,十".split(',');
-	var data = {
-		target: target,
-		event: _event,
-		time: words[diff] + "个月多"
-	};
-	var html = render(tpl,data);
-
-	var t = document.getElementById("show");
-		t.style.display = 'block';
-		t.innerHTML = html;
-}
-</script>
-
 <style>
-input{
-	margin:5px;
-	padding:5px;
-	font-size:16px;
-}
-#show{
+.show{
+	font-family: "Microsoft YaHei","PingFang SC","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 	border:1px solid #ccc;
 	background: #f5f5f5;
+	color:#333;
 	padding:10px;
-	line-height: 1.8;
-	width:20em;
-	margin-top:2em;
-	display:none;
+	line-height: 2.4;
+	width:25em;
+	margin:2em 2em 2em 3em;
 }
 </style>
-<h1 id="h1">AI智能发言官</h1>
-
-采访：<input type="text" value="教育部" id="target"> <br>
-事件：<input type="text" value="高考" id="event"> <br>
-时间：<input type="text" value="2020.6.6" id="time">
-
-<button onclick="speaking()">发言</button>
 
 
-<div id="show">
-
+<div id="app" style="width:500px;">
+	<el-form ref="newForm" :model="newEvent.model" :rules="newEvent.rules" label-width="80px">
+		<h1 id="h1">AI智能发言官</h1>
+		<el-form-item label="采访" prop="_target">
+			<el-input v-model="newEvent.model._target" /></el-input>
+		</el-form-item>
+		<el-form-item label="事件" prop="_event">
+			<el-input v-model="newEvent.model._event" /></el-input>
+		</el-form-item>
+		<el-form-item label="时间" prop="_time">
+			<el-date-picker v-model="newEvent.model._time" type="date" placeholder="选择日期"></el-date-picker>
+		</el-form-item>
+		<el-form-item>
+			<el-button type="primary" @click="speaking('newForm')">发言</el-button>
+		</el-form-item>
+	</el-form>
+	<div ref="show" class="show" v-show="result != ''">{{ result }}</div>
 </div>
+
+<script>
+var app = new Vue({
+	el: '#app',
+	data: {
+		result: "",
+		newEvent: {
+			model: {
+				_target: "教育部",
+				_event: "高考",
+				_time: "2020.6.6"
+			},
+			rules: {
+				_target: [{ required: true, message: ' ', trigger: 'blur' }],
+				_event: [{ required: true, message: ' ', trigger: 'blur' }],
+				_time: [{ required: true, message: ' ', trigger: 'blur' }]
+			}
+		}
+	},
+	methods: {
+		speaking: function(formName){
+			var _this = this;
+
+			var tpl = '{{ this._target }}相关负责人表示，当前距离{{this.event}}还有{{this._diff}}时间，我们将密切关注疫情的发展变化情况，会同相关部门和各地及时评估疫情对于{{this._event}}可能产生的的影响，审慎研究制订今年{{this._event}}的具体实施方案。'
+
+			_this.$refs[formName].validate((valid) => {
+				if (!valid) {
+					return;
+				}
+
+				var data = _this.newEvent.model;
+				var _time = data._time;
+				var diff = new Date(_time).getTime() - new Date().getTime();
+					diff = diff/(1000*60*60*24*30);
+					diff = Math.floor(diff);
+				var words = "一,两,三,四,五,六,七,八,九,十".split(',');
+
+				var _diff = "一定的";
+				if(words[diff]){
+					_diff = words[diff] + "个月多";
+				}
+
+				data._diff = _diff;
+				_this.$data.result = render(tpl,data);
+			});
+		}
+	}
+});
+</script>
 </body>
 </html>
