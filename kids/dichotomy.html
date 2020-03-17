@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>二分法</title>
+</head>
+<body>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+body, h1, h2, h3, h4, ul, ol, li, p, small, label, input {
+	font-family: "Microsoft YaHei","PingFang SC","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+.tips-pop {
+    width:80%;
+    padding:10px;
+}
+.tips-pop h2{
+    font-size:18px;
+}
+.tips-pop p {
+    margin-top:10px;
+    line-height: 1.2;
+    font-size:14px;
+}
+</style>
+<script src="./vue-2.6.10.js"></script>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="./mint/mint.css">
+<!-- 引入组件库 -->
+<script src="./mint/mint.js"></script>
+
+
+<div id="main">
+    <mt-header title="猜数字游戏">
+        <mt-button slot="right" @click="tips.pop = true">提示</mt-button>
+    </mt-header>
+
+    <div style="margin:20px 40px 10px;line-height:2;color:#333;">
+        猜测一个 5 位数，每次提交会提示答案偏大或偏小，根据反馈继续猜测，看看几次可以猜出。
+    </div>
+
+    <div class="question" style="margin:40px 20px 10px;">
+        <mt-field label="已用次数" disabled v-model="qa.times"></mt-field>
+        <p><br></p>
+        <mt-field label="答案" placeholder="请输入答案" v-model="qa.answer" :state="qa.state"></mt-field>
+    </div>
+    <div class="q-btn" style="text-align:center;">
+        <mt-button type="primary" @click="submit" v-if="qa.state !== 'success'">提交答案</mt-button>
+        <mt-button type="primary" @click="getRandom" v-else>重新答题</mt-button>
+    </div>
+
+    <mt-popup v-model="tips.pop" class="tips-pop" popup-transition="popup-fade">
+        <div class="tips">
+            <h2>二分法查找</h2>
+            <p>将要猜测的数字范围，以最中间的数字为准分为完全不重合、且数量相等的两部分。<p>
+            <p>根据大小判断快速排除一半，缩小查找范围</p>
+            <p>如此反复，快速找到答案</p>
+        </div>
+    </mt-popup>
+</div>
+
+
+<script>
+var el = new Vue({
+    el: '#main',
+    data: {
+        tips: {
+            pop: false,
+            content: '还未开始'
+        },
+        qa: {
+            state: '',
+            number: 99999,
+            times: 0,
+            answer: ''
+        }
+    },
+    mounted: function(){
+        this.getRandom();
+    },
+    methods: {
+        getRandom: function(){
+            var number = Math.ceil(Math.random()*99999);
+            if(number < 10000){
+                number += 10000
+            }
+            this.qa.number = number;
+        },
+        submit: function(){
+            var a = this.qa.answer;
+            var q = this.qa.number;
+            if(!a){
+                alert('请输入答案');
+                return;
+            }
+            if(a > q){
+                this.qa.state = 'error';
+                alert('答案偏大');
+                this.qa.times += 1;
+                return;
+            }
+
+            if(a < q){
+                this.qa.state = 'error';
+                alert('答案偏小');
+                this.qa.times += 1;
+                return;
+            }
+
+            this.qa.state = 'success';
+            alert('恭喜你猜对了');
+        }
+    }
+});
+</script>
+
+</body>
+</html>
