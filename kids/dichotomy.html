@@ -47,8 +47,9 @@ body, h1, h2, h3, h4, ul, ol, li, p, small, label, input {
     <div class="question" style="margin:40px 20px 10px;">
         <mt-field label="已用次数" disabled v-model="qa.times"></mt-field>
         <p><br></p>
-        <mt-field label="答案" placeholder="请输入答案" v-model="qa.answer" :state="qa.state"></mt-field>
+        <mt-field label="答案" type="number" style="font-size:40px;" placeholder="00000" v-model.number="qa.answer" :state="qa.state"></mt-field>
     </div>
+    <div style="text-align:center;padding-bottom:20px">{{ tips.content }}</div>
     <div class="q-btn" style="text-align:center;">
         <mt-button type="primary" @click="submit" v-if="qa.state !== 'success'">提交答案</mt-button>
         <mt-button type="primary" @click="getRandom" v-else>重新答题</mt-button>
@@ -95,25 +96,25 @@ var el = new Vue({
             var a = this.qa.answer;
             var q = this.qa.number;
             if(!a){
-                alert('请输入答案');
+                this.tips.content = '请输入答案';
                 return;
             }
             if(a > q){
                 this.qa.state = 'error';
-                alert('答案偏大');
+                this.tips.content = '答案偏大';
                 this.qa.times += 1;
                 return;
             }
 
             if(a < q){
                 this.qa.state = 'error';
-                alert('答案偏小');
+                this.tips.content = '答案偏小';
                 this.qa.times += 1;
                 return;
             }
 
             this.qa.state = 'success';
-            alert('恭喜你猜对了');
+            this.tips.content = '恭喜你猜对了';
         }
     }
 });
