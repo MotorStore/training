@@ -20,12 +20,12 @@ requirejs: http://requirejs.org/docs/whyamd.html
         global[namespace] = factory();
     }
 })(window, function(){
-    /* 
+    /*
     工具类 方法，用途
     也许会单拆一个文件
-    */  
+    */
     var utils = {
-        subs : function(template, data) {  
+        subs : function(template, data) {
         },
 
         /*
@@ -34,7 +34,7 @@ requirejs: http://requirejs.org/docs/whyamd.html
         getEmoji : function(emojiUnicode){
         },
 
-        /* 
+        /*
         error = {
             "module" : "voip/emoji/voice/sdk"
             "code" : -1,
@@ -51,7 +51,7 @@ requirejs: http://requirejs.org/docs/whyamd.html
     })();
 
 
-    /*emoji支持 白名单*/ 
+    /*emoji支持 白名单*/
     var supportList = {
     };
 
