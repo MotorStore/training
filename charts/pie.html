@@ -19,7 +19,7 @@ button {
 }
 </style>
 
-<h1>蓝块占比?</h1>
+<h1>蓝区占比?</h1>
 <div id="chart" style="height:400px;"></div>
 
 <div>
@@ -36,7 +36,7 @@ draw();
 function getAnswer(){
     if(window.answer){
         var a = Math.round(window.answer*100);
-        alert(a + '%');
+        alert(window.r + '，蓝区占比：' + a + '%');
     }
 }
 
@@ -64,6 +64,7 @@ function drawPie(id, data){
     });
 
     var r1 = Math.round(Math.random()*89);
+    window.r = '内径：' + r1 + '%，外径：90%';
     var option = {
         legend: {
             type: 'scroll',
