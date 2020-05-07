@@ -23,6 +23,7 @@ button {
 <div id="chart" style="height:400px;"></div>
 
 <div>
+    <p id="a" style="display:none"></p>
     <p>
         <button onclick="getAnswer()">查看答案</button>
         <button onclick="draw()">重试</button>
@@ -31,16 +32,22 @@ button {
 
 <script src="./echarts.min.js"></script>
 <script>
+var adom = document.getElementById('a');
 draw();
 
 function getAnswer(){
     if(window.answer){
         var a = Math.round(window.answer*100);
-        alert(window.r + '，蓝区占比：' + a + '%');
+        var v = window.r + '，蓝区占比：' + a + '%';
+        adom.style.display = 'block';
+        adom.innerHTML = v;
     }
 }
 
 function draw(){
+    adom.style.display = 'none';
+    adom.innerHTML = '';
+
     var value = Math.random();
     window.answer = value;
     var data = {
@@ -55,7 +62,7 @@ function draw(){
 
 function drawPie(id, data){
     var series = data.data;
-    var colors = ['#369','#333']
+    var colors = ['#369','orange']
 
     series.forEach(function(item, index){
         item.itemStyle = {
