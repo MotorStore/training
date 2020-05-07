@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>PIE</title>
+</head>
+<body>
+<style>
+body{
+    text-align: center;
+}
+button {
+    background: #000;
+    color:#fff;
+    padding:10px;
+    margin-right: 2em;
+}
+</style>
+
+<h1>蓝块占比?</h1>
+<div id="chart" style="height:400px;"></div>
+
+<div>
+    <p>
+        <button onclick="getAnswer()">查看答案</button>
+        <button onclick="draw()">重试</button>
+    </p>
+</div>
+
+<script src="./echarts.min.js"></script>
+<script>
+draw();
+
+function getAnswer(){
+    if(window.answer){
+        var a = Math.round(window.answer*100);
+        alert(a + '%');
+    }
+}
+
+function draw(){
+    var value = Math.random();
+    window.answer = value;
+    var data = {
+        title: '',
+        data: [
+            { "value": value},
+            { "value": 1-value}
+        ]
+    }
+    drawPie('chart', data);
+}
+
+function drawPie(id, data){
+    var series = data.data;
+    var colors = ['#369','#333']
+
+    series.forEach(function(item, index){
+        item.itemStyle = {
+            color : colors[index%colors.length]
+        }
+    });
+
+    var r1 = Math.round(Math.random()*89);
+    var option = {
+        legend: {
+            type: 'scroll',
+            orient: 'vertical',
+            right: 10,
+            top: 10,
+            bottom: 10,
+            show: data.show
+        },
+        series : [
+            {
+                name: data.name,
+                type: 'pie',
+                radius: [r1 + '%', '90%'],
+                center: ['50%', '50%'],
+                data: series,
+                labelLine: {
+                    show: false
+                }
+            }
+        ]
+    };
+
+    // getList(randomNumber,100)
+    var target = document.getElementById(id);
+    var _chart = echarts.init(target);
+        _chart.setOption(option);
+}
+</script>
+
+<p>参考<a href="https://eagereyes.org/blog/2016/an-illustrated-tour-of-the-pie-chart-study-results">思路来源</a></p>
+
+<!-- http://ft-interactive.github.io/visual-vocabulary/ -->
+</body>
+</html>
